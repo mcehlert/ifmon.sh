@@ -12,7 +12,7 @@ while [ 1 == 1 ] ; do
         if [ $RXPREV -ne -1 ] ; then
                 let BWRX=($RX-$RXPREV)/1024
                 let BWTX=($TX-$TXPREV)/1024
-                echo "Received: $BWRX MB/s    Sent: $BWTX MB/s"
+                echo "Received: $BWRX KB/s    Sent: $BWTX KB/s"
         fi
         RXPREV=$RX
         TXPREV=$TX
